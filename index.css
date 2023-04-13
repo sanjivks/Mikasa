@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ======================================== 
+         Navbar section
+  ======================================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 84%;
+}
+
+.header .logo {
+  width: 15%;
+}
+
+.navbar {
+  padding-top: 31px;
+}
+
+.navbar-list {
+
+  list-style: none;
+}
+
+.navbar-list li {
+  display: inline-block;
+
+}
+
+.navbar-list li::after {
+  content: "|";
+  padding-left: 10px;
+}
+
+.navbar ul li:last-child:after {
+  content: " ";
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  text-decoration: none;
+  font-size: 14px;
+  color: #473e6a;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #11236a;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+/* ======================================== 
+         header part 1
+    ========================================   */
+input[type=search] {
+  border-top-color: rgb(158, 140, 140);
+}
+
+#header-first {
+  background-color: #c5c2c5;
+
+  border-top: double white;
+  border-bottom: double white;
+}
+
+#header-first ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header-first-part {
+  margin: auto;
+  width: 91%;
+  list-style: none;
+  padding-right: 32px;
+}
+
+#header-first a {
+  text-decoration: none;
+  border-right: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: 15px;
+  padding-right: 19px;
+}
+
+.header-first-list {
+  padding-left: 51px;
+}
+
+#header-first #header-first-link {
+  padding-left: 15px;
+}
+
+#txt-search_box {
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+.btn-go {
+  width: 30px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.txtsearch {
+
+  border: double white;
+  border-top: 2px solid #7e7e7e;
+  border-left: 2px solid #7e7e7e;
+  padding-right: 32px;
+}
+
+input[type='text']::placeholder {
+  padding-left: 10px;
+}
+/* ======================================== 
+         header part 2
+    ========================================   */
+.header-secound {
+  border-bottom: 1px solid #999494;
+}
+
+.header-secound ul {
+  font-size: 14.5px;
+}
+
+.header-secound-part {
+  margin: auto;
+  width: 86%;
+}
+
+ul ul :first-child {
+  list-style: none;
+}
+
+ul ul :nth-child(5) {
+  list-style: none;
+}
+
+ul ul :nth-child(4) {
+  list-style: none;
+}
+
+.header-secound ul ul {
+  display: flex;
+  align-items: center;
+  gap: 0%;
+}
+
+.header-secound ul ul li {
+  margin-left: 30px;
+}
+
+.header-secound ul ul li a {
+  text-decoration: none;
+  color: rgb(98, 98, 174);
+}
+
+
+.header-secound-link-first {
+  padding-right: 35px;
+}
+
+.header-secound-li {
+  position: absolute;
+  right: 12%;
+}
+
+.header-secound-img {
+  padding-left: 28%;
+  height: 42px;
+}
+/* ======================================== 
+        main section
+ ========================================   */
+.main-body {
+  background-image: url(./background.png);
+}
+
+main {
+  margin: auto;
+  width: 83%;
+}
+
+.main-center-body {
+  display: flex;
+}
+
+.left-container {
+  width: 72%;
+  border: 7px solid white;
+}
+
+.right-container {
+  width: 28%;
+  border: 7px solid white;
+  background-color: #3e3c3c;
+}
+
+.left-container-image {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  height: 97%;
+  border: 2px solid #b7afaf;
+  margin: 7px;
+}
+
+.card-name {
+  margin: auto;
+  width: 80%;
+  font-size: 30px;
+  padding-top: 30px;
+  color: white;
+}
+
+.card-desc {
+  font-family: Bahnschrift Light;
+  font-size: 18px;
+  padding-top: 30px;
+  margin: auto;
+  width: 81%;
+  color: rgb(205, 197, 187);
+}
+
+.card-links ul {
+  margin: auto;
+  width: 83%;
+  padding-top: 20px;
+}
+
+.card-links ul li {
+
+  padding-top: 10px;
+  list-style-type: none;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgb(130, 126, 126);
+}
+
+#card-links-last {
+  border: none;
+}
+
+.order-bottom {
+  left: 50px;
+}
+
+.card-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: Bahnschrift Light;
+  margin-left: 6px;
+}
+
+.card-anchor-tag a {
+  color: rgb(135, 132, 128);
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.card-anchor-tag {
+  padding-top: 20px;
+}
+/* ======================================== 
+        section2
+    ========================================  */
+.main-bottom-body {
+  border: 6px solid black;
+  display: flex;
+  width: 100%;
+}
+
+
+.album {
+  position: relative;
+  width: 33.33%;
+  background-color: white;
+  border: 1px solid rgb(189, 186, 186);
+}
+
+.top-left {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 20px
+}
+
+.top-secound-left {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  font-size: 14px;
+  color: rgb(135, 132, 128)
+}
+
+.top-secound-left-last-album {
+  position: absolute;
+  top: 62px;
+  left: 19px;
+  font-size: 14px;
+  padding-top: 11px;
+  color: rgb(135, 132, 128);
+}
+
+.bottom-center {
+  position: absolute;
+  top: 44%;
+  left: 69%;
+  transform: translate(-23%, -19%);
+}
+
+.bottom-center-secound-album {
+  position: absolute;
+  top: 41%;
+  left: 55%;
+}
+
+.bottom-center-last-album {
+  position: absolute;
+  top: 70%;
+  left: 14%;
+  transform: translate(-23%, -19%);
+}
+
+.bottom-center-last-album a {
+  text-decoration: none;
+  color: black;
+}
+
+.bottom-center a,
+.bottom-center-secound-album a {
+  color: black;
+  text-decoration: none;
+}
+
+.promo-glass {
+  padding-top: 20px;
+  width: 78%;
+}
+
+.promo_plates {
+  margin-top: 8%;
+  padding-top: 20px;
+  width: 97%;
+}
+
+.promo_album {
+  height: 100%;
+  margin-left: 41%;
+  margin-top: 0%;
+  padding-top: 22px;
+}
+/* ======================
+footer
+=========================  */
+.footer {
+  width: 100%;
+  display: flex;
+  height: 150px;
+}
+
+.footer-div {
+  width: 50%;
+}
+
+.footer-div ul {
+  padding-top: 10px;
+}
+
+.footer-div ul li {
+  display: inline-block;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.footer-div ul li a {
+  color: rgb(184, 179, 179);
+
+}
+
+.footer-div div,
+a {
+  color: rgb(184, 179, 179);
+  padding-top: 10px;
+}
+
+.footer-text {
+  color: rgb(184, 179, 179);
+  text-align: right;
+  padding-top: 10px;
+}
+
+.footer-txtbtn {
+  margin: auto;
+  width: 42%;
+  padding-top: 10px;
+
+}
+
+.txtemail {
+  width: 100%;
+  border-top: 2px solid #7e7e7e;
+  border-left: 2px solid #7e7e7e;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.btn-submit {
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 14%;
+  width: 6%;
+  text-align: center;
+  padding: 0px 1px 2px 0px;
+}
+/* ================================================= */
+@media (max-width: 1230px) {
+
+  .header .logo {
+    height: 5rem;
+    width: 2px;
+  }
+
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    border: 3px solid #212529;
+    color: #212529;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+}
